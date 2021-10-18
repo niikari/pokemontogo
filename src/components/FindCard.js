@@ -10,7 +10,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 
-pokemon.configure({apiKey: '61c8fc59-acbb-41b3-8aac-fbfef83f167e'})
+pokemon.configure({apiKey: '35e71d1a-e584-4088-b627-4830751d38f2'})
 
 export default function FindCard() {
 
@@ -28,6 +28,7 @@ export default function FindCard() {
         pokemon.card.where({ q: `name:${card.name}`})
         .then(result => setCards(result.data))     
         .catch(err => console.log(err))
+
     }
 
     const showCardInfo = (index) => {
