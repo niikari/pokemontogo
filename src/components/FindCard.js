@@ -50,7 +50,7 @@ export default function FindCard() {
         <div style={{ marginTop:20 }}>
             <Stack spacing={2} direction="row">
                 <TextField name='name' type="text" value={card.name} placeholder="Nimi" onChange={handleChange} />
-                <TextField name='number' type="number" value={card.number} placeholder="Numero (025/140)" onChange={handleChange} />
+                <TextField name='number' type="text" value={card.number} placeholder="Numerot ennen /" onChange={handleChange} />
                 
             </Stack>
             <Button variant="contained" size="large" onClick={find} style={{marginTop:10}}>Hae kortti</Button>
